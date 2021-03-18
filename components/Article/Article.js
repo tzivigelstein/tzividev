@@ -12,9 +12,9 @@ const Article = ({
   return (
     <article className={styles.article}>
       <div className={styles.article__preview_container}>
-        <img className={styles.preview_container__preview} src={image} alt="MernTasks - page preview" />
+        <img className={styles.preview_container__preview} src={image} alt={`${titleBold} - page preview`} />
       </div>
-      <div className={styles.article__info_container}>
+     {/*  <div className={styles.article__info_container}>
         <div className={styles.info_container__title_container}>
           <h5 className={styles.title_container__title}>
             {titleBold} <span className={styles.title__span}>- {titleNormal}</span>
@@ -29,7 +29,7 @@ const Article = ({
             Code <GithubIcon style={{ marginLeft: '0.5rem' }} width={16} height={16} fill={theme['--eerie-black']} />
           </a>
         </div>
-      </div>
+      </div> */}
     </article>
   )
 }

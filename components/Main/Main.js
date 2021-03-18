@@ -1,5 +1,16 @@
-import { Menu } from '../Icons/Index'
 import styles from './main.module.css'
+import {
+  CSSIcon,
+  GitIcon,
+  HTMLIcon,
+  JavaScriptIcon,
+  Menu,
+  MongoIcon,
+  MySQLIcon,
+  NodeJSIcon,
+  ReactIcon,
+} from '../Icons/Index'
+import Article from '../Article/Article'
 
 const Main = () => {
   return (
@@ -11,7 +22,81 @@ const Main = () => {
         </div>
       </div>
       <div className={styles.main_container__sections_container}>
-        <section className={styles.sections_container__section}></section>
+        <section className={styles.sections_container__section}>
+          <h3 className={styles.section__title}>Professional skills</h3>
+          <div className={styles.section__skills_container}>
+            <div className={styles.skills_container__skills_grid}>
+              <div
+                style={{
+                  backgroundColor: '#61DAFB',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <ReactIcon width={27} height={27} />
+              </div>
+              <div
+                style={{
+                  backgroundColor: '#13AA52',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <MongoIcon fill="#eee" width={27} height={27} />
+              </div>
+              <div
+                style={{
+                  backgroundColor: '#FCDC00',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <JavaScriptIcon width={27} height={27} />
+              </div>
+              <div
+                style={{
+                  backgroundColor: '#F29221',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <MySQLIcon fill="#eee" width={27} height={27} />
+              </div>
+              <div
+                style={{
+                  backgroundColor: '#13AA52',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <NodeJSIcon fill="#eee" width={27} height={27} />
+              </div>
+              <div
+                style={{
+                  backgroundColor: '#F64A1D',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <HTMLIcon fill="#eee" width={27} height={27} />
+              </div>
+              <div
+                style={{
+                  backgroundColor: '#249CDA',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <CSSIcon fill="#eee" width={27} height={27} />
+              </div>
+              <div
+                style={{
+                  backgroundColor: '#F14E32',
+                }}
+                className={styles.skills_grid__skill}
+              >
+                <GitIcon fill="#eee" width={27} height={27} />
+              </div>
+            </div>
+            <div className={styles.skills_container__text_skills_container}>
+              <span className={styles.text_skills_container__text_skill}>👉 Fast adaptation to teamwork</span>
+              <span className={styles.text_skills_container__text_skill}>👉 Love to learn new things</span>
+            </div>
+          </div>
+        </section>
         <section className={styles.sections_container__section}>
           <h3 className={styles.section__title}>Career and experience</h3>
           <p className={styles.section__description}>
@@ -21,8 +106,13 @@ const Main = () => {
           </p>
         </section>
       </div>
-      <section>
-        <h2>Projects</h2>
+      <section className={styles.main_container__projects_container}>
+        <h2 className={styles.projects_container__title}>Projects</h2>
+        <ul className={styles.projects_container__projects_list}>
+          <Article titleBold="Product Hunt Clone" image="/ProductHuntflyer.png" />
+          <Article titleBold="Twitter Clone" image="/TwitterCloneFlyer.png" />
+          <Article titleBold="Product Hunt Clone" image="/MERNTasks.png" />
+        </ul>
       </section>
     </main>
   )
