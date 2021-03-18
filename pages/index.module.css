@@ -9,3 +9,11 @@
     padding: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: max-content;
+    padding: 1rem;
+  }
+}

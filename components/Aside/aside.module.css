@@ -18,7 +18,7 @@
 }
 
 .image_container__circle {
-  background-color: rgba(72, 177, 191, 60%);
+  background: linear-gradient(45deg, rgba(72, 177, 191, 0.6), rgba(6, 190, 182, 0.6));
   width: 220px;
   height: 220px;
   position: absolute;
@@ -37,7 +37,7 @@
 
 .aside_container__info_container {
   border-radius: 32px;
-  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 8%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -94,7 +94,7 @@
 @media (max-width: 1366px) {
   .aside_container {
     width: 30%;
-    margin-right: 0; /* Turn in 1rem when main section is finished & give the same margin but the opposite to the main*/
+    margin-right: 1rem; /* Turn in 1rem when main section is finished & give the same margin but the opposite to the main*/
     padding: 1rem;
   }
 
@@ -112,5 +112,21 @@
   .image_container__circle {
     width: 120px;
     height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aside_container {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .aside_container__image_container {
+    width: 50%;
+  }
+
+  .image_container__circle {
+    width: 150px;
+    height: 150px;
   }
 }

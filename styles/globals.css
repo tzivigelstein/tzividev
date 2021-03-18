@@ -51,7 +51,7 @@ img {
   justify-content: space-around;
   font-size: 18px;
   text-decoration: none;
-  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 8%);
   width: max-content;
   cursor: pointer;
 }

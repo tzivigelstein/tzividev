@@ -33,7 +33,7 @@ const Aside = () => {
           </div>
         </div>
 
-        <button style={{ margin: '1rem 0', alignSelf: 'center' }} className="btn btn_primary btn_primary__text">
+        <button href="/curriculum_escuela.pdf" style={{ margin: '1rem 0', alignSelf: 'center' }} className="btn btn_primary btn_primary__text">
           Download CV <DownloadIcon width={18} height={21.86} />
         </button>
       </div>
