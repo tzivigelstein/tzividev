@@ -10,11 +10,11 @@ const Article = ({
   github = 'https://github.com/tzivigelstein',
 }) => {
   return (
-    <article className={styles.article}>
+    <li className={styles.article}>
       <div className={styles.article__preview_container}>
         <img className={styles.preview_container__preview} src={image} alt={`${titleBold} - page preview`} />
       </div>
-    </article>
+    </li>
   )
 }
 

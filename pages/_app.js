@@ -6,7 +6,9 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
+        <html lang="en" />
         <title>Home | tzividev</title>
+        <meta name="description" content="I'm Tzivi and this is my portfolio 😄 enter to know more about me" />
       </Head>
       <AppState>
         <Component {...pageProps} />
