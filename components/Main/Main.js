@@ -109,9 +109,37 @@ const Main = () => {
       <section className={styles.main_container__projects_container}>
         <h2 className={styles.projects_container__title}>Projects</h2>
         <ul className={styles.projects_container__projects_list}>
-          <Article titleBold="Product Hunt Clone" image="/ProductHuntflyer.png" />
-          <Article titleBold="Twitter Clone" image="/TwitterCloneFlyer.png" />
-          <Article titleBold="Product Hunt Clone" image="/MERNTasks.png" />
+          <Article
+            titleBold="Product Hunt Clone"
+            site="https://producthunt-cl.vercel.app/"
+            github="https://github.com/tzivigelstein/Product-Hunt-Clone"
+            image="/ProductHuntflyer.png"
+          />
+          <Article
+            titleBold="MERNTasks"
+            site="https://mernt-tasks-client.vercel.app/"
+            github="https://github.com/tzivigelstein/MERNTasks-Client"
+            image="/MERNTasks.png"
+          />
+          <Article
+            titleBold="Twitter Clone"
+            site="https://twitter-cl.vercel.app/"
+            github="https://github.com/tzivigelstein/Twitter-Clone"
+            image="/TwitterCloneFlyer.png"
+          />
+          <Article
+            titleBold="Chatty app"
+            titleNormal="Chat app"
+            site="https://chatty-app.vercel.app/login"
+            github="https://github.com/tzivigelstein/Chatty"
+            image="/Chatty.png"
+          />
+          <Article
+            titleBold="Lyric it"
+            site="https://lyrict-it.netlify.app/"
+            github="https://github.com/tzivigelstein/Lyric-it"
+            image="/Lyricit.png"
+          />
         </ul>
       </section>
     </main>

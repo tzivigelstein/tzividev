@@ -25,7 +25,7 @@ const Aside = () => {
               Go to Linkedin 🚀
             </a>
           </div>
-          <div>
+          <div className={styles.social_container__link_container}>
             <GithubIcon fill="#000000de" />
             <a className={styles.link_container__link} href="https://github.com/tzivigelstein">
               Go to Github 🛸
