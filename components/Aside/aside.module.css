@@ -91,6 +91,10 @@
   color: var(--gray);
 }
 
+.button {
+  margin: 2rem auto;
+}
+
 @media (max-width: 1366px) {
   .aside_container {
     width: 30%;
@@ -132,10 +136,6 @@
     flex-direction: column;
     height: 100%;
     align-self: center;
-  }
-
-  .button {
-    margin: 1rem auto;
   }
 }
 

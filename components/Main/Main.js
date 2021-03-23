@@ -113,32 +113,32 @@ const Main = () => {
             titleBold="Product Hunt Clone"
             site="https://producthunt-cl.vercel.app/"
             github="https://github.com/tzivigelstein/Product-Hunt-Clone"
-            image="/ProductHuntflyer.png"
+            image="/ProductHuntflyer.webp"
           />
           <Article
             titleBold="MERNTasks"
             site="https://mernt-tasks-client.vercel.app/"
             github="https://github.com/tzivigelstein/MERNTasks-Client"
-            image="/MERNTasks.png"
+            image="/MERNTasks.webp"
           />
           <Article
             titleBold="Twitter Clone"
             site="https://twitter-cl.vercel.app/"
             github="https://github.com/tzivigelstein/Twitter-Clone"
-            image="/TwitterCloneFlyer.png"
+            image="/TwitterCloneFlyer.webp"
           />
           <Article
             titleBold="Chatty app"
             titleNormal="Chat app"
             site="https://chatty-app.vercel.app/login"
             github="https://github.com/tzivigelstein/Chatty"
-            image="/Chatty.png"
+            image="/Chatty.webp"
           />
           <Article
             titleBold="Lyric it"
             site="https://lyrict-it.netlify.app/"
             github="https://github.com/tzivigelstein/Lyric-it"
-            image="/Lyricit.png"
+            image="/Lyricit.webp"
           />
         </ul>
       </section>

@@ -6,7 +6,7 @@ const Aside = () => {
     <aside className={styles.aside_container}>
       <div className={styles.aside_container__image_container}>
         <div className={styles.image_container__circle}></div>
-        <img className={styles.image_container__image} src="/me.png" alt="Tzivi Gelstein" />
+        <img className={styles.image_container__image} src="/me.webp" alt="Tzivi Gelstein" />
       </div>
       <div className={styles.aside_container__info_container}>
         <div>
