@@ -34,9 +34,9 @@ const Aside = () => {
               </a>
             </div>
           </div>
-          <button href="/curriculum_escuela.pdf" className={`btn btn_primary btn_primary__text ${styles.button}`}>
+          <a download href="/Tzivi_Gelstein_CV.pdf" className={`btn btn_primary btn_primary__text ${styles.button}`}>
             Download CV <DownloadIcon width={18} height={21.86} />
-          </button>
+          </a>
         </div>
       </div>
     </aside>
