@@ -15,10 +15,6 @@ const Aside = () => {
     setDownloadHeight(linksRef.current.clientHeight + buttonRef.current.clientHeight)
   }, [])
 
-  useEffect(() => {
-    console.log(downloadOpen)
-  }, [downloadOpen])
-
   return (
     <aside className={styles.aside_container}>
       <div className={styles.aside_container__image_container}>
