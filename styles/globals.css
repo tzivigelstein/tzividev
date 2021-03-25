@@ -2,6 +2,7 @@
   --black: rgba(0, 0, 0, 0.871);
   --gray: rgba(0, 0, 0, 0.6);
   --cultured: #f7f9f9;
+  --darker-blue: #38939f;
   --dark-blue: #48b1bf;
   --light-blue: #06beb6;
   --transparent: rgba(255, 255, 255, 0.5);
@@ -72,7 +73,7 @@ img {
 }
 
 .btn_primary:active {
-  background-color: var(--dark-teal);
+  background-color: var(--darker-blue);
 }
 
 .btn_secondary {

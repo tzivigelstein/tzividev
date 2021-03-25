@@ -1,7 +1,24 @@
 import styles from './aside.module.css'
 import { DownloadIcon, GithubIcon, LinkedinIcon } from '../Icons/Index'
+import { useEffect, useRef, useState } from 'react'
 
 const Aside = () => {
+  const [downloadOpen, setDownloadOpen] = useState(false)
+  const [downloadHeight, setDownloadHeight] = useState(null)
+  const [buttonHeight, setButtonHeight] = useState(null)
+
+  const linksRef = useRef()
+  const buttonRef = useRef()
+
+  useEffect(() => {
+    setButtonHeight(buttonRef.current.clientHeight)
+    setDownloadHeight(linksRef.current.clientHeight + buttonRef.current.clientHeight)
+  }, [])
+
+  useEffect(() => {
+    console.log(downloadOpen)
+  }, [downloadOpen])
+
   return (
     <aside className={styles.aside_container}>
       <div className={styles.aside_container__image_container}>
@@ -34,9 +51,27 @@ const Aside = () => {
               </a>
             </div>
           </div>
-          <a download href="/Tzivi_Gelstein_CV.pdf" className={`btn btn_primary btn_primary__text ${styles.button}`}>
-            Download CV <DownloadIcon width={18} height={21.86} />
-          </a>
+          <div style={{ height: downloadHeight }} className={styles.info_container__download_container}>
+            <button
+              ref={buttonRef}
+              onClick={() => setDownloadOpen(!downloadOpen)}
+              className={`btn btn_primary btn_primary__text ${styles.button}`}
+            >
+              Download CV <DownloadIcon width={18} height={21.86} />
+            </button>
+            <div
+              style={downloadOpen ? { top: buttonHeight - 3 } : { top: -buttonHeight * 2 }}
+              ref={linksRef}
+              className={styles.download_container__links_container}
+            >
+              <a className={styles.links_container__link} download href="/Tzivi_Gelstein_CV_EN.pdf">
+                English 🇺🇸
+              </a>
+              <a className={styles.links_container__link} download href="/Tzivi_Gelstein_CV_ES.pdf">
+                Spanish 🇪🇸
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </aside>
